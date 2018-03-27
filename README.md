@@ -4,4 +4,4 @@
 
 
 ### In progress
-Preparing UI programming: Go-qml
+Preparing GUI programming: Sciter-rust
