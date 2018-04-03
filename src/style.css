@@ -1,0 +1,32 @@
+﻿body {
+	width: 1000px;
+	height: 600px;
+	background: red;
+	padding: 0;
+	margin: 0;
+}
+
+div.container {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.left_area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 760px;
+	height: 100%;
+	background: rgb(74, 109, 196);
+}
+
+.right_area {
+	position: absolute;
+	top: 0;
+	left: 760;
+	width: 240px;
+	height: 100%;
+	background: rgb(206, 204, 57);
+}
