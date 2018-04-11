@@ -1,5 +1,3 @@
-use hyper::Uri;
-
 pub trait Exchange {
     fn current_price_uri(&self, coin: &str) -> String;
 }

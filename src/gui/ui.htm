@@ -1,0 +1,223 @@
+﻿<html>
+<head>
+	<title>MMM</title>
+	<!-- 
+	<link href="style.css" type="text/css" rel="stylesheet" />
+	<link href="components_layout.css" type="text/css" rel="stylesheet" />
+	<link href="components.css" type="text/css" rel="stylesheet" /> 
+	-->
+	<style>
+html {
+	width: 1000px;
+	height: 600px;
+	padding: 0;
+	margin: 0;		
+}
+
+body {
+	width: 1000px;
+	height: 600px;
+	background: red;
+	padding: 0;
+	margin: 0;
+}
+
+div.container {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.left_area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 760px;
+	height: 100%;
+	background: rgb(74, 109, 196);
+}
+
+.right_area {
+	position: absolute;
+	top: 0;
+	left: 760;
+	width: 240px;
+	height: 100%;
+	background: rgb(206, 204, 57);
+}
+
+/* 셀렉트박스 시작 */
+.select {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 120px;
+}    
+
+.select select {
+	font-family: 'Arial';
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+	padding: 8px 8px;
+	outline: 0;
+	border: 2px double #CCCCCC;;
+	border-radius: 5px;
+	background: #FFFFFF;
+	color: #7B7B7B;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+.select select:hover,
+.select select:focus {
+	color: #000000;
+	background: #CCCCCC;
+}
+.select select:disabled {
+	opacity: 0.1;
+}
+
+/*셀렉트박스 끝*/
+
+/* 텍스트박스 시작 */
+.css-input {
+	padding: 8px;
+	font-size: 14px;
+	border-width: 1px;
+	border-color: #CCCCCC;
+	background-color: #FFFFFF;
+	color: #000000;
+	border-style: solid;
+	border-radius: 4px;
+	box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+	text-shadow: 0px 0px 0px rgba(66,66,66,.75);
+}
+.css-input:focus {
+	outline:none;
+}
+/* 텍스트박스 끝 */
+
+/* 플레이 버튼 시작*/
+
+/* 플레이 버튼 끝*/
+
+
+div.comp_line {
+	/*
+	position: absolute;
+	top: 30;
+	left: 20;
+	*/
+	position: relative;
+	top: 20px;
+	left: 20px;
+	height: auto;
+	width: 630px;
+	margin-top:20px;
+	display: block;
+	padding: 0;
+}
+
+div.comp_line .comp_block {
+	position: relative;
+	display: inline-block;
+	margin-left: 60px;
+	width: 130px;
+	padding: 0;
+}
+
+.right_position {
+	float: right;
+}
+
+div.log {
+	width: 600px;
+	height: 200px;
+	margin-left: 60px;
+	margin-top: 150px;
+}
+
+div.log textarea {
+	width: 100%;
+	height: 100%;
+}
+
+div.comp_single {
+	text-align:center;
+	margin-top:25px;
+}
+
+div.comp_desc {
+	font-family: 'Malgun Gothic';
+	font-size: 12pt;
+	margin-bottom: 5px;
+}
+	</style>
+	<script type="text/tiscript">
+		$(#play).on("click", : {
+
+		});
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="left_area">
+			<div class="comp_line">
+				<div class="comp_block">
+					<div id="exchange">
+						거래소
+					</div>
+				</div>
+				<div class="comp_block">
+					<div class="select">
+						<select>
+							<option>select coin</option>
+							<option>BTC</option>
+						</select>					
+					</div>
+				</div>
+				<div class="comp_block right_position">
+					인증상태
+				</div>
+			</div>
+			<div class="comp_line">
+				<div class="comp_block">
+					<div class="select">
+						<select>
+							<option>trade style</option>
+							<option>Bol</option>
+						</select>					
+					</div>
+				</div>
+			</div>
+			<div class="comp_line">
+				<div class="log">
+					<textarea></textarea>
+				</div>
+			</div>
+		</div>
+		<div class="right_area">
+			<div class="comp_single">
+				<button id="play">시작</button> / <button id="stop">정지</button>
+			</div>
+			<div class="comp_single">
+				<div class="comp_desc">1회 매매 MAX 금액</div>
+				<input type="text" class="css-input" />
+			</div>
+			<div class="comp_single">
+				<div class="comp_desc">매매 횟수</div>
+				<input type="text" class="css-input" />
+			</div>
+			<div class="comp_single">
+				<div class="comp_desc">익절 비율</div>
+				<input type="text" class="css-input" />
+			</div>			
+			<div class="comp_single">
+					<div class="comp_desc">손절 비율</div>
+				<input type="text" class="css-input" />
+			</div>									
+		</div>
+	</div>
+</body>
+</html>
